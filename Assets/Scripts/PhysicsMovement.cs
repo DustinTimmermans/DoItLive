@@ -21,7 +21,7 @@ public class PhysicsMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(new Vector3(_movement.x, 0, _movement.y) * speed * Time.deltaTime);
+        transform.Translate(speed * Time.deltaTime * new Vector3(_movement.x, 0, _movement.y));
     }
 
     public void OnCollisionEnter(Collision collision)
