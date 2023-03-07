@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using UnityEngine;
 
 namespace Assets.Scripts.StateManagement.PlayerState
 {
@@ -10,17 +8,22 @@ namespace Assets.Scripts.StateManagement.PlayerState
     {
         public override void Enter()
         {
-            throw new NotImplementedException();
+            UnityEngine.Debug.Log("Entering moving state");
         }
 
         public override void Exit()
         {
-            throw new NotImplementedException();
+            UnityEngine.Debug.Log("Exiting moving state");
         }
 
         public override void Update()
         {
-            throw new NotImplementedException();
+            UnityEngine.Debug.Log("Updating moving state");
+        }
+
+        public override string GetName()
+        {
+            return "Move";
         }
     }
 }

@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.StateManagement.PlayerState
 {
-    public class JumpState : State
+    public class RunState : State
     {
         public override void Enter()
         {
-            UnityEngine.Debug.Log("Entering jumping state");
+            UnityEngine.Debug.Log("Entering running state");
         }
 
         public override void Exit()
         {
-            UnityEngine.Debug.Log("Exiting jumping state");
+            UnityEngine.Debug.Log("Exiting running state");
         }
 
         public override void Update()
         {
-            UnityEngine.Debug.Log("Updating jumping state");
+            UnityEngine.Debug.Log("Updating running state");
         }
 
         public override string GetName()
         {
-            return "Jump";
+            return "Run";
         }
     }
 }

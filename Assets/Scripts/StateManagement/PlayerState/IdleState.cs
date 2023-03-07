@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 
 namespace Assets.Scripts.StateManagement.PlayerState
 {
@@ -10,17 +11,22 @@ namespace Assets.Scripts.StateManagement.PlayerState
     {
         public override void Enter()
         {
-            throw new NotImplementedException();
+            UnityEngine.Debug.Log("Entering idle state");
         }
 
         public override void Exit()
         {
-            throw new NotImplementedException();
+            UnityEngine.Debug.Log("Exiting idle state");
         }
 
         public override void Update()
         {
-            throw new NotImplementedException();
+            UnityEngine.Debug.Log("Updating idle state");
+        }
+
+        public override string GetName()
+        {
+            return "Idle";
         }
     }
 }
