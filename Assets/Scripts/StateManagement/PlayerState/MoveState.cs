@@ -1,7 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using UnityEngine;
-
+﻿
 namespace Assets.Scripts.StateManagement.PlayerState
 {
     public class MoveState : State

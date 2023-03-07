@@ -1,14 +1,10 @@
 using Assets.Scripts.StateManagement;
 using Assets.Scripts.StateManagement.PlayerState;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PhysicsMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private StateMachine _stateMachine;
 
@@ -78,7 +74,7 @@ public class PhysicsMovement : MonoBehaviour
             _movement *= _run;
             _stateMachine.ChangeState(new RunState());
         }
-        else if (!value.isPressed && !_stateMachine.IsInState(typeof(MoveState)))
+        else if (!value.isPressed && _movement.x == 0 && _movement.y == 0)
         {
             _stateMachine.ChangeState(new IdleState());
         }

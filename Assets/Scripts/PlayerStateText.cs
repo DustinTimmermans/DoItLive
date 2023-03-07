@@ -17,7 +17,6 @@ public class PlayerStateText : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(_state);
         _state.text = _name;
     }
 
