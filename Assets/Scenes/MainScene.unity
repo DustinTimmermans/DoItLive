@@ -9081,7 +9081,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 2142309532}
-  m_VersionIndex: 17
+  m_VersionIndex: 23
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10375,7 +10375,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-63900
+  m_Name: pb_Mesh24898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10711,7 +10711,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-71960
+  m_Name: pb_Mesh24816
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12192,7 +12192,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-36968
+  m_Name: pb_Mesh24778
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12424,7 +12424,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-43976
+  m_Name: pb_Mesh24794
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12637,6 +12637,10 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1213546534511975702, guid: 0812e196de502d145abc7924837715d9, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1213546534511975705, guid: 0812e196de502d145abc7924837715d9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -12644,7 +12648,7 @@ PrefabInstance:
     - target: {fileID: 1213546534511975706, guid: 0812e196de502d145abc7924837715d9, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 1213546534511975707, guid: 0812e196de502d145abc7924837715d9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12687,7 +12691,7 @@ MonoBehaviour:
   m_DefaultControlScheme: Keyboard & Mouse
   m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 963194227}
 --- !u!65 &1213546535073989653
 BoxCollider:
   m_ObjectHideFlags: 0

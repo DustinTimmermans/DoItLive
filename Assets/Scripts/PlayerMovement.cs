@@ -41,19 +41,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 direction = new Vector3(_movement.x, 0, _movement.y);
         transform.Translate(_speed * Time.deltaTime * direction);
-
-        if (direction.magnitude >= 0.1f)
-        {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, _turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-        }
         _playerStateText.UpdateName(_stateMachine.GetState().GetName());
     }
 
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.CompareTag("Ground"))
+        if (collision.collider.CompareTag("Ground"))
         {
             // If player hits ground, transition to Idle state
             State state = _movement.x != 0 || _movement.y != 0 ? new MoveState() : new IdleState();
@@ -65,7 +58,6 @@ public class PlayerMovement : MonoBehaviour
     {
         // Move the player
         _movement = value.Get<Vector2>();
-        Debug.Log(_movement);
         State state = _movement.Equals(Vector2.zero) ? new IdleState() : new MoveState();
         _stateMachine.ChangeState(state);
     }

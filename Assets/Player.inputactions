@@ -25,7 +25,7 @@
                 },
                 {
                     "name": "Look",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "431c273f-6e64-441a-aedd-a65f34eaa4c4",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -112,7 +112,7 @@
                 {
                     "name": "",
                     "id": "da993767-6b63-4a6d-87ec-64787c8a3233",
-                    "path": "<Mouse>/delta",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "InvertVector2(invertX=false)",
                     "groups": "Keyboard & Mouse",
